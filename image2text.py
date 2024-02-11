@@ -1,8 +1,8 @@
 import pytesseract
-#pytesseract.pytesseract.tesseract_cmd = r"C:/Users/leekw/AppData/Local/Tesseract-OCR/tesseract.exe"
+import io
 img_file = "text1.png"
 from PIL import Image
-pytesseract.pytesseract.tesseract_cmd = r"C:/Users/leekw/AppData/Local/Tesseract-OCR/tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
 
 def image2text(img_file):
            

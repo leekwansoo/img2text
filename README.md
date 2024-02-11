@@ -6,4 +6,4 @@ when installing check the korean language in foreign language option.
 
 include the following statment in the image2text.py file
 
-pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract_OCR/tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
