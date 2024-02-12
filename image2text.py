@@ -1,12 +1,16 @@
+import streamlit as st
 import pytesseract
-import io
-img_file = "text1.png"
+#import io
 from PIL import Image
-pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
+#from io import BytesIO
+path_to_tesseract = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = path_to_tesseract
+#pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
+exit
 
-def image2text(img_file):
-           
-    image = Image.open(img_file)
+def image2text(image):
+    
+    image = Image.open(image)
    
     text = pytesseract.image_to_string(image, lang="kor")
 

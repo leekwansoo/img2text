@@ -5,13 +5,11 @@ import os
 
 st.title("Image to Text Converter")
 st.sidebar.title("Select Image to convert")
-
 image = st.sidebar.file_uploader(label= "Upload a Image", type = ["jpg", "jpeg", "png"])
-
 file_name = st.sidebar.text_input(label = "Enter Output File Name")
 
 if image is not None:
-    st.image(image)
+        st.image(image)
 
 st.markdown("""
             ### Abstracted Text
