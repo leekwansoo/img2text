@@ -3,7 +3,7 @@ import pytesseract
 #import io
 from PIL import Image
 #from io import BytesIO
-path_to_tesseract = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
+path_to_tesseract = "/home/adminuser/bin/tesseract"
 pytesseract.pytesseract.tesseract_cmd = path_to_tesseract
 #pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
 exit
